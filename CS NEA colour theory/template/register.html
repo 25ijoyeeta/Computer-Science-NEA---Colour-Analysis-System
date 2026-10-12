@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+
+<body>
+    <link rel="stylesheet" href="styling/style.css">
+    <h1>Registration</h1>
+    <form action="dashboard.html" method="post">
+
+        <label for="email">Email:</label> 
+        <div>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+
+        <br>
+        <label for="username">Username:</label>
+        <div>
+            <input type="text" id="username" name="username" placeholder="Username" required maxlength="12">
+        </div>
+
+
+        <br>
+        <label for="password">Password:</label>
+        <div>
+            <input type="password" id="password" name="password" placeholder="Password" required maxlength="12">
+        </div>
+    
+    <br>
+    <div>Already have an account? <a href="signin.html">Sign in</a></div>
+
+    <br>
+    <div>
+        <input type="reset" value="Reset">
+    </div>
+
+    <br>
+    <div>
+        <button type = "Submit">Submit</button>
+    </div>
+
+    <div>
+        <button><a href="dashboard.html">continue</a></button>
+    </div>
+
+    </form>
+</body>
+
+</html>
