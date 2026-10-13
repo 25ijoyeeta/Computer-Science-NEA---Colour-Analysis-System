@@ -7,6 +7,7 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
     line-height: 1.6;
+    color: #ffde59;
 }
 
 
@@ -15,16 +16,16 @@ h1 {
 }
 
 button { 
-    padding: 20px;
-   margin: 10px;
-   background-color: rgba(80, 22, 95, 0.3);
-   color: #ffde59;
-   font-size: 21px;
-   font-weight: bold;
-   line-height: 1.3em;
-   border: 2px dashed #ffde59;
-   border-radius: 10px;
-   font-weight: normal;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(80, 22, 95, 0.3);
+    color: #ffde59;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.3em;
+    border: 2px dashed #ffde59;
+    border-radius: 10px;
+    font-weight: normal;
 }
 
 a {
@@ -33,21 +34,21 @@ a {
 
 input[type="text"], input[type="password"], input[type="email"] {
     background-color: rgba(80, 22, 95, 0.3);
-   margin: 10px;
-   width: 300px;
-   padding: 10px;
-   border: 2px dashed #ffde59;
-   border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+    border: 2px dashed #ffde59;
+    border-radius: 10px;
 }
 
 input[type="submit"], input[type="reset"] {
     background-color: rgba(80, 22, 95, 0.3);
-   margin: 10px;
-   width: 100px;
-   padding: 10px;
-   border: 2px dashed #ffde59;
-   border-radius: 10px;
-   color: #ffde59;
+    margin: 10px;
+    width: 100px;
+    padding: 10px;
+    border: 2px dashed #ffde59;
+    border-radius: 10px;
+    color: #ffde59;
 }
 
 label {

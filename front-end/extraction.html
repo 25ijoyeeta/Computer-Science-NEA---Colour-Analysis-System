@@ -3,18 +3,76 @@
     <meta charset="UTF-8">
     <title>Colour Extraction</title>
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 <body>
     <form action="">
         <label for="uploadfile">
             <input type="file" name="uploadfile" id="uploadfile" accept = ".jpg, .jpeg, .png">
         </label>
-
+        <br>
         <button><a href="colour_analysis.html">View colour analysis</a></button>
+        
+        <br>
         <div>
             <button><a href="save_analysis.html">Save colour analysis</a></button>
         </div>
-    </form>
+
+    <main class="workspace">
+        <section class="card">
+            <div class="upload-zone">
+                <p>📁 <strong>Drag & drop an image</strong> or click to browse</p>
+                <input type="file" id="file-input" style="display: none;">
+            </div>
+
+            <div class="settings">
+                <div class="setting-group">
+                    <label for="color-count">Number of colors (Limit)</label>
+                    <select id="color-count">
+                        <option>5 Colors</option>
+                        <option>8 Colors</option>
+                        <option>10 Colors</option>
+                    </select>
+                </div>
+                
+                <div class="setting-group">
+                    <label for="tolerance">Color grouping tolerance</label>
+                    <input type="range" id="tolerance" min="0" max="50" value="12">
+                </div>
+
+                <button class="btn-extract">Extract Colors </button>
+            </div>
+        </section>
+
+        
+        <section class="card">
+            <h2>Extracted Palette</h2>
+            <p>Your colors will appear below:</p>
+            
+            <div class="palette-grid">
+                <!-- Example Mock Data Row 1 -->
+                <div class="color-row">
+                    <div class="color-preview" style="background-color: #6366f1;"></div>
+                    <div class="color-info">
+                        <div class="hex-code">#6366F1</div>
+                        <small style="color: #64748b">Primary Indigo</small>
+                    </div>
+                    <button class="btn-copy">Copy</button>
+                </div>
+
+                <div class="color-row">
+                    <div class="color-preview" style="background-color: #ffb020;"></div>
+                    <div class="color-info">
+                        <div class="hex-code">#FFB020</div>
+                        <small style="color: #64748b">Vibrant Amber</small>
+                    </div>
+                    <button class="btn-copy">Copy</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</form>
 
 </body>
 
